@@ -42,12 +42,12 @@ input {
 	margin: 0;
 	}
 .container {
-	margin-top: 30px;
+	margin-top: 20px;
 }
 h1 {
 	font-family: 'Adamina', serif;
 	color: #5A3F2E;
-	font-size: 38px;
+	font-size: 34px;
 	line-height: 1.5;
 }
 h2 {
@@ -67,6 +67,7 @@ h3 {
 	z-index: 1;
 	min-height: 2em;
 	background: lightpink;
+	justify-content: space-between;
 }
 .menu__left li {
 	margin-right: 50px;
@@ -78,7 +79,7 @@ h3 {
 }
 nav {
 	display: flex;	
-	justify-content: center;
+	justify-content: center;	
 }
 nav ul {
 	display: flex;
@@ -94,6 +95,38 @@ nav ul li a{
 	height: 52px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+.fa-print {
+	height: 20px;
+	width: 20px;
+	position: fixed;
+	top: 1em;
+	right: 1em;
+	cursor: pointer;
+	z-index: 1000;
+}
+.moon {
+	height: 52px;
+	width: 52px;
+}
+.info-section {		
+	background-color: #F3F6FB;
+	padding-top: 20px;
+	padding-bottom: 20px;	
+}
+.info-section-dark {
+	background-color: #E5B7AD;	
+	padding: 5%;
+}
+.info-section-dark ol li {
+	padding-top: 20px;
+	line-height: 1.5;
+	font-size: 18px;
+}
+.info-section-dark ol li span {
+	font-family: 'Adamina', serif;
+	font-size: 24px;
+	color: #000;
 }
 .info-section-light {		
 	background-color: #F3F6FB;
@@ -112,6 +145,15 @@ nav ul li a{
 .slogan__h3 {
 	margin-bottom: 10px; 
 }
+.slogan__anchor {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+}
+.slogan__anchor:hover {
+	color: #F3F6FB;
+	transition-duration: 0.3s;
+}
 .canele {
 	padding-left: 80px;
 	height: 500px;
@@ -128,94 +170,216 @@ nav ul li a{
 .about {
 	display: flex;	
 	justify-content: center;
+	justify-content: space-between;
+	height: 400px;
 }
 .about__canele-left { 
 	height: 400px;
 	width: 350px;
-	margin-right: 90px;
 }
-.about__canele-right { 
-	height: 400px;
-	width: 350px;
-	margin-left: 90px;
+.about__canele-right {
+	margin-top: 5%;
 }
+.about__jew {
+	height: 86px;
+	width: 86px;
+} 
 .about__box {	
 	background-color: #F3F6FB;
-	padding-top: 60px;
-	padding-left: 70px;
-	padding-right: 70px;
-	margin-top: 70px;	
-	margin-bottom: 70px;
+	padding-top: 4%;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-top: 7%;	
+	margin-bottom: 7%;
+	margin-left: 2%;
+	margin-right: 4%;
 	border-radius: 30px;
 }
-p {
+.about__box p {
 	text-align: center;
 	padding-bottom: 10px;
 }
+.about__box ol {
+	padding-left: 40px;
+}
 .about__box ol li {
 	text-align: left;
+}
+.about__diamond {
+	height: 32px;
+	width: 32px;
+	rotate:  30deg;
 }
 .about__appeal {
 	padding-top: 15px;
 	color: #000;	
 	text-align: center;
+	text-decoration: underline;
 }
-.info-section {
-	background-color: #E5B7AD;
-	padding-top: 90px;
-	padding-bottom: 90px; 
+.stages_list {
+	padding-left: 2%;
+	padding-right: 2%;
 }
-.info-section-dark {
-	background-color: #E5B7AD;	
-	padding: 90px;
+.care h1 {
+	text-align: center;
+	padding-bottom: 20px;
+	text-decoration: underline 1.5px;
 }
-.info-section-dark ol li {
-	padding-top: 20px;
-	line-height: 1.5;
-	font-size: 18px;
+.care_box {
+	font-size: 14px;
+	display: flex;
 }
-.info-section-dark ol li span {
+.care_img {
+	height: 25px;
+	width: 25px;
+	margin-right: 5px;
+}
+.care_girl {
+	height: 550px;
+	width: 600px;
+}
+.care_tips span {
 	font-family: 'Adamina', serif;
 	font-size: 24px;
-	color: #000;
+	text-decoration: underline 1px;
 }
-.slogan__anchor {
+.tip-block {
+	margin-top: 15px;
+	background-color: #F3F6FB;
+	margin-bottom: 10px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	padding-left: 4%;
+	padding-right: 4%;
+	border-radius: 30px;
+}
+.care_q {
+	font-size: 14px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 10px;
+}
+.craftmen h1 {
+	text-align: center;
+}
+.craftmen__masters-line1, 
+.craftmen__masters-line2 {
+	display: -webkit-flex; 
+	display: flex; 
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	margin-top: 30px;
+	align-items: center;
+	margin-left: 6%;
+}
+.craftmen__effect-text-two figure {
+	position: relative;
+	z-index: 1;
+}
+.craftmen__effect-text-two figure figcaption {
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	color: #fff;
 	text-transform: uppercase;
-	text-decoration: none;
+	font-size: 1.25em;
+	backface-visibility: hidden;
+}
+.craftmen__effect-text-two figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure.craftmen__effect-text-three h2 {
+	position: absolute;
+	top: 70%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #F3F6FB;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+figure.craftmen__effect-text-three:hover h2 {
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+.craftmen__master {
+	height: 300px;
+	width: 300px;
+	margin-right: 30px;
+}
+.craftmen__feed {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: center;
+	font-family: 'Adamina', serif;
+}
+.craftmen__feedb {
 	color: #000;
 }
-.slogan__anchor:hover {
-	color: #F3F6FB;
-	transition-duration: 0.3s;
-}
-.materials {
-
-}
-td {
-	border-right: 2px solid #5A3F2E;
+.materials h1 {
+	text-align: center;
+	text-decoration: underline 2px;
+	margin-bottom: 50px;
 }
 .materials__canele {
-	height: 350px;
+	height: 380px;
 	width: 300px;
-	position: relative;
-	top: 50px; 
-	left: 55px; 
-	z-index: 5;
+	margin-left: 40px;
 }
 .materials__info {
 	vertical-align: middle;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.materials__info p {
+	padding-bottom: 10px;
 }
 .materials__material {
 	font-family: 'Adamina', serif;
 	font-size: 28px;
 	color: #000;
 }
-.contacts__header {
-	margin-bottom: 20px;
+.materials_photo-block {
+	margin: 0 auto;
+	vertical-align: middle;
 }
-.location {
-	display: flex;	
+.materials__photo {
+	margin-right: 40px;
+	display: flex;
+}
+.materials__photo img {
+	height: 180px;
+	width: 180px;	
+	padding-bottom: 10px;
+	margin-left: 10px;
+    overflow: hidden;
+}
+.materials__photo img:hover {
+	transition: 1s;
+	transform: scale(1.2); 
+}
+.materials__note {
+	font-size: 22px;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: 'Adamina', serif;
+}
+.contacts__head {
+	display: flex;
+}
+.contacts__jew {
+	height: 56px;
+	width: 56px;
 }
 .location-info {
 	margin-right: 20px;
@@ -229,13 +393,16 @@ td {
 	margin-bottom: 30px;
 }
 .location__canele {
-	height: 400px;
+	height: 490px;
 	width: 350px;
+	margin-left: 10%;
 }
 .map {
+	display: flex;
+}
+.map__info {
 	position:relative;
 	overflow:hidden;
-	margin-right: 20px;
 }
 .map__link {
 	color:#eee;
@@ -283,4 +450,628 @@ button:hover {
 	width: 24px;
 	height: 24px;
 	margin-right: 10px;
+}
+/*--------------------------------------------------*/
+@media screen and (max-width: 1074px) {
+	.container {
+	margin-top: 20px;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	h3 {
+		font-size: 22px;
+	}
+	.menu {
+		min-height: 1.5em;
+	}
+	.menu__left li {
+		margin-right: 45px;
+	}
+	.menu__right li {
+		margin-left: 45px;
+	}
+	nav ul {
+		padding-top: 25px;
+	}
+	.logo {
+		width: 46px;
+		height: 46px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+	.moon {
+		height: 42px;
+		width: 42px;
+	}
+	.slogan__title {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.canele {
+		padding-left: 30px;
+	}
+	.about__canele-right {
+		margin-top: 5%;
+		padding-top: 60px;
+		margin-right: 10px;
+	}
+	.about__jew {
+		height: 60px;
+		width: 60px;
+	} 
+	.about__box {
+		margin-right: 2%;
+	}
+	.care_girl {
+		margin-top: 70px;
+		height: 550px;
+		width: 580px;
+	}
+	.care_q {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.craftmen_main-block {
+		display: -webkit-flex; 
+		display: flex; 
+		-webkit-flex-direction: row;
+		align-items: center;
+	}
+	.craftmen__masters-line1, 
+	.craftmen__masters-line2 {
+		display: -webkit-flex; 
+		display: flex; 
+		-webkit-flex-direction: column;
+		-webkit-flex-wrap: wrap;
+	}
+	.craftmen__feed {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	.materials h1 {
+		margin-bottom: 30px;
+	}
+	.materials__canele {
+		height: 300px;
+		width: 220px;
+		margin-left: 10px;
+	}
+	.materials__material {
+		font-size: 24px;
+	}
+	.materials__photo {
+		margin-right: 20px;
+		display: -webkit-flex; 
+		display: flex; 
+		-webkit-flex-direction: column;
+		-webkit-flex-wrap: wrap;
+	}
+	.materials__photo img {
+		height: 120px;
+		width: 120px;	
+		padding-bottom: 5px;
+		margin-left: 5px;
+	}
+	.materials__note {
+		font-size: 16px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.location__canele {
+		height: 400px;
+		width: 300px;
+		margin-left: 3%;
+	}
+	.map__info {
+		width: 460px; 
+		height: 400px;
+	}
+}
+/*--------------------------------------------------*/
+@media screen and (max-width: 759px) {
+	.container {
+	margin-top: 10px;
+	}
+	h1 {
+		font-size: 26px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	.menu {
+		min-height: 1em;
+	}
+	.menu__left li {
+		margin-right: 30px;
+	}
+	.menu__right li {
+		margin-left: 30px;
+	}
+	nav ul {
+		padding-top: 18px;
+	}
+	.info-section {	
+	padding-top: 10px;
+	padding-bottom: 10px;	
+	}
+	.info-section-dark {	
+		padding: 2%;
+	}
+	.info-section-dark ol li {
+		padding-top: 10px;
+	}
+	.info-section-dark ol li span {
+		font-size: 20px;
+	}
+	.info-section-light {
+		padding-top: 10px;
+		padding-bottom: 10px;	
+	}
+	.logo {
+		width: 35px;
+		height: 35px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.moon {
+		height: 35px;
+		width: 35px;
+	}
+	.slogan__title {
+		margin-right: 15px;
+		margin-left: 10px;
+	}
+	.rectangle {
+		width: 80%;
+		height: 30px;
+		line-height: 30px;
+	}
+	.slogan__anchor {
+		text-transform: lowercase;
+		font-size: 0.9em;
+	}
+	.canele {
+		padding-left: 10px;
+		height: 360px;
+		width: 300px;
+	}
+	.about {
+		height: 350px;
+	}
+	.about__canele-left { 
+		height: 350px;
+		width: 300px;
+	}
+	.about__canele-right {
+		display: -webkit-flex; 
+		display: flex; 
+		-webkit-flex-direction: row;
+		margin-top: 0;
+		margin-right: 30px;
+		padding: 0;
+	}
+	.about__jew {
+		position: absolute;
+		z-index: 1;
+		right: 20px;
+		height: 40px;
+		width: 40px;
+	}
+	.jew2 {
+		margin-right: 40px;
+	}
+	.jew3 {
+		margin-right: 80px;
+	}
+	.about__box {	
+		margin-top: 7%;	
+		margin-bottom: 4%;
+		margin-right: 2px;
+	}
+	.care_girl {
+		height: 450px;
+		width: 480px;
+		margin-top: 140px;
+	}
+	.tip-block {
+		padding-top: 7%;
+		padding-bottom: 7%;
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+	.care_q {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.craftmen_main-block { 
+		-webkit-flex-direction: column;
+	}
+	.materials__canele {
+		height: 270px;
+		width: 180px;
+		margin-left: 10px;
+	}
+	.materials__info p {
+	font-size: 12px;
+	}
+	.materials__material {
+		font-size: 18px;
+	}
+	.location__canele {
+		height: 340px;
+		width: 250px;
+		margin-left: 3%;
+	}
+	button {
+		width: 50%;
+		margin-left: 25%;
+	}
+	.contacts__jew {
+	    height: 42px;
+	    width: 42px;
+	}
+	.footer {
+		padding: 10px;
+	}
+}
+/*--------------------------------------------------*/
+@media screen and (max-width: 612px) {
+	.care h1, .craftmen h1, .materials h1, .contacts__header {
+		font-size: 16px;
+		margin-bottom: 5px;
+		padding-bottom: 3px;
+	}
+	.menu__left li {
+		font-size: 10px;
+		margin-right: 20px;
+	} 
+	.menu__right li {
+		font-size: 10px;
+		margin-left: 20px;
+	}
+	.canele {
+		display: none;
+	}
+	.slogan__h3 {
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 20px;
+	}
+	.about {
+		margin-top: 3px;
+		margin-bottom: 3px;
+		margin-right: 5px;
+		height: 260px;
+	}
+	.about__canele-left {
+		height: 250px;
+		width: 200px;
+	}
+	.about__box {
+		margin-top: 30px;
+		margin-bottom: 25px;
+		margin-right: 5px;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 3px;
+		font-size: 12px;
+	}
+	.about__canele-right {
+		display: none;
+	}
+	.info-section-dark ol li {
+		font-size: 12px;
+	}
+	.info-section-dark ol li span {
+		font-size: 14px;
+	}
+	.care_girl {
+		display: none;
+	} 
+	.care_tips span {
+		font-size: 16px;
+	}
+	.tip-block {
+		padding-top: 3%;
+		padding-bottom: 3%;
+		padding-left: 3%;
+		padding-right: 3%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.materials__humanjewelry {
+		display: none;
+	}
+	.materials__photo img {
+		height: 100px;
+	width: 100px;
+	}
+	.materials__info {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	.materials__note {
+	    font-size: 12px;
+	    margin-top: 20px;
+	    margin-bottom: 10px;
+	    margin-right: 20px;
+	    margin-left: 20px;
+	}
+	.contacts__jew {
+	    height: 25px;
+	    width: 25px;
+	}
+	.location-info p {
+		font-size: 12px;
+	}
+	button a {
+		font-size: 11px;
+	}
+	.location__canele {
+		display: none;
+	}
+	.map__info {
+		width: 400px; 
+		height: 340px;
+	}
+	
+}
+/****************************************************/
+@media screen and (max-width: 397px) {
+	.fa-print {
+		height: 10px;
+		width: 10px;
+	}
+	nav ul {
+		padding-top: 15px;
+	}
+	.menu__left li {
+		font-size: 9px;
+		margin-right: 10px;
+	} 
+	.menu__right li {
+		font-size: 9px;
+		margin-left: 10px;
+	}
+	.logo {
+		width: 30px;
+		height: 30px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+	.craftmen__master figcaption {
+		margin-top: 0px;
+	}
+	.craftmen__master {
+		height: 200px;
+		width: 200px;
+	}
+	.location-info li {
+		font-size: 12px;
+	}
+	.location-info p {
+		margin-bottom: 8px;
+	}
+	.location-info ul {
+		margin-bottom: 8px;
+	}
+	.footer {
+		font-size: 10px;
+	}
+	
+}
+/****************************************************/
+@media print {
+	.menu, .slogan__anchor, .footer, button, .canele, .about__canele-left, 
+	.about__jew, .location__canele{
+		display: none;
+	}
+	.info-section {	
+		padding: 0px;	
+	}
+	.info-section-dark {	
+		padding: 0%;
+	}
+	.info-section-light {
+		padding: 0px;	
+	}
+	.container {
+		margin-top: 0px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	.info-section {	
+		padding: 1px;	
+	}
+	.info-section-dark {	
+		padding: 0px;
+	}
+	.info-section-dark ol li {
+		padding-top: 0px;
+	}
+	.info-section-dark ol li span {
+		font-size: 20px;
+	}
+	.info-section-light {
+		padding: 0px;	
+	}
+	.moon {
+		height: 35px;
+		width: 35px;
+	}
+	.slogan {
+		margin-top: 0px;
+		margin-bottom: 1px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.slogan__title {
+		margin-right: 15px;
+		margin-left: 10px;
+	}
+	.rectangle {
+		width: 80%;
+		height: 30px;
+		line-height: 30px;
+	}
+	.slogan__anchor {
+		text-transform: lowercase;
+		font-size: 0.9em;
+	}
+	.about {
+		height: 200px;
+	}
+	.about__box {	
+		margin-top: 2px;	
+		margin-bottom: 2px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.care_girl {
+		height: 470px;
+		width: 380px;
+		margin-top: 100px;
+	}
+	.tip-block {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding-top: 4%;
+		padding-bottom: 3%;
+		padding-left: 2%;
+		padding-right: 1%;
+	}
+	.care_q {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.craftmen_main-block {
+		display: -webkit-flex; 
+		display: flex; 
+		-webkit-flex-direction: column;
+		align-items: center;
+	}
+	.craftmen h1 {
+	text-align: center;
+}
+.craftmen__masters-line1, 
+.craftmen__masters-line2 {
+	display: -webkit-flex; 
+	display: flex; 
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	margin-top: 10px;
+	align-items: center;
+	margin-left: 1%;
+}
+.craftmen__effect-text-two figure {
+	position: relative;
+	z-index: 1px
+}
+.craftmen__effect-text-two figure figcaption {
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	backface-visibility: hidden;
+}
+.craftmen__effect-text-two figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure.craftmen__effect-text-three h2 {
+	position: absolute;
+	top: 70%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #F3F6FB;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+figure.craftmen__effect-text-three:hover h2 {
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+.craftmen__master {
+	height: 200px;
+	width: 200px;
+	margin-right: 30px;
+}
+	.materials h1 {
+		margin-bottom: 30px;
+	}
+	.materials__canele {
+		height: 270px;
+		width: 180px;
+		margin-left: 1px;
+	}
+	.materials__material {
+		font-size: 20px;
+	}
+	.materials__info p {
+		font-size: 16px;
+	}
+	.materials__photo {
+		margin-right: 5px;
+		display: -webkit-flex; 
+		display: flex; 
+		-webkit-flex-direction: row;
+		-webkit-flex-wrap: wrap;
+	}
+	.materials__photo img {
+		height: 80px;
+		width: 80px;	
+		padding-bottom: 4px;
+		margin-left: 5px;
+	}
+	.materials__note {
+		font-size: 16px;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.materials__info p {
+		font-size: 12px;
+	}
+	.location__canele {
+		height: 340px;
+		width: 250px;
+		margin-left: 3%;
+	}
+	.map__info {
+		width: 460px; 
+		height: 400px;
+	}
+	button {
+		width: 50%;
+		margin-left: 25%;
+	}
+	.contacts__jew {
+	    height: 42px;
+	    width: 42px;
+	}
+	.craftmen__master {
+		height: 200px;
+		width: 200px;
+	}
 }
