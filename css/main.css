@@ -848,12 +848,36 @@ button:hover {
 		padding-top: 1px;
 		padding-bottom: 1px;
 	}
+	.tip-block {
+		padding: 10px;
+	}
+	.care_box {
+		font-size: 10px;
+	}
+	.care_q {
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+	.about__canele-left { 
+		display: none;
+	}
 	.craftmen__master figcaption {
 		margin-top: 0px;
 	}
 	.craftmen__master {
 		height: 200px;
 		width: 200px;
+	}
+	.materials__photo img {
+		width: 80px;
+		height: 80px;
+	}
+	.materials__info {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.materials__info p {
+		font-size: 10px;
 	}
 	.location-info li {
 		font-size: 12px;
